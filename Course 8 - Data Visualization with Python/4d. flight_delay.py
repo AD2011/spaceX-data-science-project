@@ -56,6 +56,19 @@ def compute_info(airline_data, entered_year):
     avg_late = df.groupby(['Month','Reporting_Airline'])['LateAircraftDelay'].mean().reset_index()
     return avg_car, avg_weather, avg_NAS, avg_sec, avg_late
 
+"""Callback Function
+
+Function that returns fugures using the provided input year.
+
+Arguments:
+
+    entered_year: Input year provided by the user.
+    
+Returns:
+
+    List of figures computed using the provided helper function `compute_info`.
+"""
+  
 # Callback decorator
 @app.callback( [
                Output(component_id='carrier-plot', component_property='figure'),
