@@ -1,2 +1,2 @@
-# coursera_data_science_lab
-Contains all notebooks from my Data Science Course in Cousera
+# Applied Data Science Capstone Project
+Contains all Notebooks for my capstone project
